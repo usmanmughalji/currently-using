@@ -482,8 +482,8 @@ class GoogleDriveHelper:
                     content += f'<b> | <a href="https://telegra.ph/{self.path[nxt_page]}">Next</a></b>'
                     nxt_page += 1
             Telegraph(access_token=telegraph_token).edit_page(path = self.path[prev_page],
-                                 title = 'Mirror Bot Search',
-                                 author_name='Mirror Bot',
+                                 title = 'Drive-X Search',
+                                 author_name='Drive-X Bot',
                                  author_url='https://github.com/magneto261290/magneto-python-aria',
                                  html_content=content)
         return
@@ -563,9 +563,9 @@ class GoogleDriveHelper:
 
             for content in self.telegraph_content :
                 self.path.append(Telegraph(access_token=telegraph_token).create_page(
-                                                        title = 'Mirror Bot Search',
-                                                        author_name='Mirror Bot',
-                                                        author_url='https://github.com/magneto261290/magneto-python-aria',
+                                                        title = 'Drive-X Search',
+                                                        author_name='Drive-X Bot',
+                                                        author_url='https://github.com/usmanmughalji/drive-bot-ultimate',
                                                         html_content=content
                                                         )['path'])
 
